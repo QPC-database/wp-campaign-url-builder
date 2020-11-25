@@ -96,7 +96,8 @@ class reatlat_cub_Admin {
 		    __('Campaign URL Builder', $this->plugin_real_name), // page_title
             __('Campaign URL Builder', $this->plugin_real_name), // menu_title
             'edit_posts', // capability
-            $this->plugin_name . '-settings-page', array($this, 'render_settings_page'), // menu_slug
+            $this->plugin_name . '-settings-page',
+            array($this, 'render_settings_page'), // menu_slug
             'dashicons-share-alt' // icon_url
         );
 	}
